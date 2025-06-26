@@ -69,6 +69,19 @@ Analytics Endpoint:
 - GET /api/expenses/analytics/?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD : 
   Returns total expense, category-wise breakdown, and daily, weekly, monthly summaries.
 
+## Sample API Call: POST /api/expenses/
+
+In Headers:
+  Authorization: Bearer <access_token>
+  Content-Type: application/json
+
+Body:
+  {
+    "amount": 500,
+    "category": "FOOD",
+    "date": "2025-06-20"
+  }
+
 ## Notes
 
 - All endpoints are protected and require authentication.
