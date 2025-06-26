@@ -1,27 +1,55 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.sqlite3
-*.log
-*.pot
-*.pyc
 *.pyo
 *.pyd
+
+# Environment files
+.env
 *.env
 
-# Virtualenv
+# SQLite DB
+db.sqlite3
+*.sqlite3
+
+# Logs
+*.log
+
+# Unit test / coverage
+.coverage
+htmlcov/
+*.cover
+coverage.xml
+
+# Media / Uploaded files
+/media/
+media/
+
+# Django static + cache
+/static/
+staticfiles/
+static/
+*.collectstatic/
+
+# Virtual environments
 venv/
 ENV/
 env/
+.venv/
 
-# VSCode
+# VS Code settings
 .vscode/
 
-# Django
-db.sqlite3
-*.pyc
-/static/
-
-# Git
+# Mac system files
 .DS_Store
+
+# Vim swap files
 *.swp
+
+# Translations
+*.pot
+*.mo
+
+# MyPy / Pyright
+.mypy_cache/
+.pyright/
