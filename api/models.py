@@ -1,9 +1,8 @@
 from django.db import models
-
-# Create your models here.
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from .managers import UserManager
 
+# Create your models here.
 class User(AbstractBaseUser, PermissionsMixin):
     id = models.BigAutoField(primary_key=True)
     email = models.EmailField(unique=True)
